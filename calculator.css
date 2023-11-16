@@ -1,0 +1,28 @@
+.banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.banner h2{
+    font-size: 70px;
+}
+.container{
+    margin: auto;
+    border: 2px black solid;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner a{
+    font-size: 50px;
+    text-decoration: none;
+    color:black;
+}
+.box{
+    margin:5px;
+    border:2px black solid;
+    border-radius:5px;
+    width:250px;
+}

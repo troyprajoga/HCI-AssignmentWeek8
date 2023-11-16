@@ -1,0 +1,35 @@
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    font-size:50px;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 50px;
+}
+.banner{
+    width:100%;
+}
+.container{
+    margin:auto;
+    border: 2px solid black;
+}
+.container h1{
+    font-size: 70px;
+}
+.banner a{
+    font-size: 50px;
+    text-decoration: none;
+    color:black;
+}
+.box{
+    margin:5px;
+    border:2px black solid;
+    border-radius:5px;
+    width:250px;
+}

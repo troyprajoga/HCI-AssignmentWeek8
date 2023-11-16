@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Widget</title>
+  <link rel="stylesheet" href="widget.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<div class="banner">
+  <div class="container">
+    <div class="navbar">
+      <div class="tab" data-tab="news">News</div>
+      <div class="tab" data-tab="reviews">Reviews</div>
+      <div class="tab" data-tab="comments">Comments</div>
+    </div>
+    
+  
+    <div class="tab-content" id="news-content">
+      <h2>Latest News</h2>
+      <p>This is the news content.</p>
+    </div>
+  
+    <div class="tab-content" id="reviews-content">
+      <h2>User Reviews</h2>
+      <p>This is the reviews content.</p>
+    </div>
+  
+    <div class="tab-content" id="comments-content">
+      <h2>User Comments</h2>
+      <p>This is the comments content.</p>
+    </div>
+  </div>
+  <div class="box">
+    <a href="index.html">Go to Home</a>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Set the default active tab
+    $(".tab:first").addClass("active");
+    $(".tab-content:first").addClass("active");
+
+    // Tab click event
+    $(".tab").click(function(){
+      var tabId = $(this).attr("data-tab");
+
+      // Remove the 'active' class from all tabs and tab contents
+      $(".tab").removeClass("active");
+      $(".tab-content").removeClass("active");
+
+      // Add the 'active' class to the clicked tab and corresponding content
+      $(this).addClass("active");
+      $("#" + tabId + "-content").addClass("active");
+    });
+  });
+</script>
+
+</body>
+</html>
