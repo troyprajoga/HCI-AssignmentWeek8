@@ -39,19 +39,16 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
   $(document).ready(function(){
-    // Set the default active tab
+
     $(".tab:first").addClass("active");
     $(".tab-content:first").addClass("active");
 
-    // Tab click event
     $(".tab").click(function(){
       var tabId = $(this).attr("data-tab");
 
-      // Remove the 'active' class from all tabs and tab contents
       $(".tab").removeClass("active");
       $(".tab-content").removeClass("active");
 
-      // Add the 'active' class to the clicked tab and corresponding content
       $(this).addClass("active");
       $("#" + tabId + "-content").addClass("active");
     });
